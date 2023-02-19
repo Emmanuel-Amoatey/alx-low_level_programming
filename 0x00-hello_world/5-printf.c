@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 /**
- *
  * main - helps with execution
  *
  * Return: returns 0 when successfull
  */
-
 
 int main(void)
 {
