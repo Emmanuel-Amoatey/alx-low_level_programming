@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - the main function 
+ * main - the main function
  *
  * Return: returns 0 when successful
  */
@@ -17,6 +17,6 @@ int main(void)
 	printf("Size of an int: %ld byte(s)\n", sizeof(intType));
 	printf("Size of a long int: %ld byte(s)\n", sizeof(long_intType));
 	printf("Size of a long long int: %ld byte(s)\n", sizeof(long_long_intType));
-	printf("Size of a float: %ld byte(s)\n", sizeof(floatType));	
+	printf("Size of a float: %ld byte(s)\n", sizeof(floatType));
 	return (0);
 }
