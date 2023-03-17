@@ -42,7 +42,6 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-
 /**
  * errors - handles errors for main
  */
@@ -102,8 +101,7 @@ int main(int argc, char *argv[])
 		_putchar(result[i] + '0');
 	}
 	if (!a)
-		_putchar('0');
-	_putchar('\n');
+		_putchar("0\n");
 	free(result);
-return (0);
+	return (0);
 }
