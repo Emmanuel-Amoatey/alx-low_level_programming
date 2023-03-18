@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 #define ERR_MSG "Error"
 
 /**
@@ -42,6 +43,7 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+
 /**
  * errors - handles errors for main
  */
@@ -50,6 +52,7 @@ void errors(void)
 {
 	printf("Error\n");
 	exit(98);
+
 }
 
 /**
@@ -81,7 +84,7 @@ int main(int argc, char *argv[])
 		result[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
-	digit1 = s1[len1] - '0';
+		digit1 = s1[len1] - '0';
 		carry = 0;
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
@@ -98,10 +101,13 @@ int main(int argc, char *argv[])
 		if (result[i])
 			a = 1;
 		if (a)
-		_putchar(result[i] + '0');
+			_putchar(result[i] + '0');
 	}
 	if (!a)
-		_putchar("0\n");
-	free(result);
-	return (0);
+	{
+		_putchar('0');
+	}
+		_putchar('\n');
+		free(result);
+		return (0);
 }
